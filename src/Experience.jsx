@@ -16,19 +16,11 @@ export default function Experience() {
     "https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/macbook/model.gltf"
   );
 
-  const { float } = useControls("float", {
-    float: { value: 0.4 },
-  });
-  const { color } = useControls("float", {
-    color: { value: "#4e4c29" },
-  });
-
   console.log(model);
   return (
     <>
       {/* <OrbitControls makeDefault /> */}
-      <Environment files={"./code.jpg"} background />
-      <color args={[color]} attach="background" />
+      <Environment preset="city" />
       <PresentationControls
         global
         rotation={[0.13, 0.1, 0]}
@@ -37,7 +29,7 @@ export default function Experience() {
         config={{ mass: 2, tension: 400 }}
         snap
       >
-        <Float rotationIntensity={float}>
+        <Float rotationIntensity={0.4}>
           <rectAreaLight
             width={2.5}
             height={1.65}

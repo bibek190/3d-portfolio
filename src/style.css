@@ -11,6 +11,7 @@ body,
 
 .r3f {
   touch-action: none;
+  background: linear-gradient(to bottom, #171616, #beba82);
 }
 .htmlScreen iframe {
   width: 1024px;
